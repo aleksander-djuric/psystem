@@ -1,0 +1,10 @@
+PLUGIN_LDFLAGS = -module -avoid-version -shared
+lib_LTLIBRARIES = cadd.la csub.la cmul.la cdiv.la
+cadd_la_SOURCES = cadd.c
+cadd_la_LDFLAGS = $(PLUGIN_LDFLAGS)
+csub_la_SOURCES = csub.c
+csub_la_LDFLAGS = $(PLUGIN_LDFLAGS)
+cmul_la_SOURCES = cmul.c
+cmul_la_LDFLAGS = $(PLUGIN_LDFLAGS)
+cdiv_la_SOURCES = cdiv.c
+cdiv_la_LDFLAGS = $(PLUGIN_LDFLAGS)
